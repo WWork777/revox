@@ -16,7 +16,7 @@ export default function Services() {
 	return (
 		<section
 			id='services'
-			className='services max-w-480 mx-auto bg-[#eef3f3] py-10 overflow-hidden 2xl:py-20'
+			className='max-w-480 mx-auto bg-[#eef3f3] py-10 overflow-hidden 2xl:py-20'
 		>
 			<div className='max-w-360 mx-auto px-5 sm:pl-5 sm:pr-0 overflow-visible'>
 				<div className='max-w-360 mx-auto sm:pr-5 pb-6 flex items-center justify-between'>

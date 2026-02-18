@@ -13,8 +13,8 @@ function Footer() {
 								<NavLink href='/#services'>Услуги</NavLink>
 								<NavLink href='/#projects'>Проекты</NavLink>
 								<NavLink href='/#team'>Команда</NavLink>
-								<NavLink href='/#record'>Звукозапись</NavLink>
-								<NavLink href='/#cert'>Сертификаты</NavLink>
+								<NavLink href='/learning/#record'>Звукозапись</NavLink>
+								<NavLink href='/learning/#cert'>Сертификаты</NavLink>
 							</div>
 							<PrivacyLink href='/personal' />
 						</div>
@@ -54,8 +54,8 @@ function Footer() {
 							<NavLink href='/#services'>Услуги</NavLink>
 							<NavLink href='/#projects'>Проекты</NavLink>
 							<NavLink href='/#team'>Команда</NavLink>
-							<NavLink href='/#record'>Звукозапись</NavLink>
-							<NavLink href='/#cert'>Сертификаты</NavLink>
+							<NavLink href='/learning/#record'>Звукозапись</NavLink>
+							<NavLink href='/learning/#cert'>Сертификаты</NavLink>
 						</div>
 
 						{/* Контакты и соцсети */}

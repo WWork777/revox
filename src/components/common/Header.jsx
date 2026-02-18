@@ -443,7 +443,7 @@ export default function Header() {
 				<div className='w-full flex items-center justify-between sm:w-auto sm:mx-auto'>
 					<Link href={'/'}>
 						<img
-							src='/images/logo/logo3.png'
+							src='/images/logo/logo.png'
 							alt='logo'
 							className={`
 								w-15 md:w-20 lg:w-25 2xl:w-30 
@@ -562,6 +562,36 @@ export default function Header() {
 							{item.title}
 						</Link>
 					))}
+					<Link
+						href={'/learning/#record'}
+						onClick={() => setIsOpen(false)}
+						className={`
+								text-white text-lg py-2 border-b border-white/20 
+								transition-all duration-300 hover:pl-4 hover:border-white
+								transform 
+								${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}
+							`}
+						style={{
+							transitionDelay: isOpen ? `${6 * 130}ms` : '0ms',
+						}}
+					>
+						ЗВУКОЗАПИСЬ
+					</Link>
+					<Link
+						href={'/learning/#cert'}
+						onClick={() => setIsOpen(false)}
+						className={`
+								text-white text-lg py-2 border-b border-white/20 
+								transition-all duration-300 hover:pl-4 hover:border-white
+								transform 
+								${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}
+							`}
+						style={{
+							transitionDelay: isOpen ? `${7 * 130}ms` : '0ms',
+						}}
+					>
+						СЕРТИФИКАТЫ
+					</Link>
 				</div>
 			</div>
 		</header>

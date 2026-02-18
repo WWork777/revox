@@ -1,0 +1,356 @@
+@import '../const.scss';
+
+.home-reviews {
+	display: flex;
+	flex-direction: column;
+	background-color: #fcffff;
+	gap: 45px;
+	.swiper-title-pagination {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		h2 {
+			font-size: 64px;
+			font-weight: 600;
+			//margin-right: 60px;
+			margin-bottom: 0;
+		}
+		.reviews-title {
+			display: flex;
+			flex-direction: row;
+			gap: 15px;
+			align-items: center;
+			h2 {
+				margin-right: 30px;
+			}
+			.swiper-button-disabled {
+				background-color: rgba(0, 0, 0, 0.6) !important;
+			}
+			.swiper-button-prev-reviews,
+			.swiper-button-next-reviews {
+				width: 50px;
+				height: 50px;
+				border: none;
+				background-color: black;
+				color: white;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+				transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+				-webkit-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+				-moz-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+				-ms-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+				-o-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+			}
+			.swiper-button-prev-new:active,
+			.swiper-button-next-new:active {
+				transform: scale(0.95);
+				-webkit-transform: scale(0.95);
+				-moz-transform: scale(0.95);
+				-ms-transform: scale(0.95);
+				-o-transform: scale(0.95);
+			}
+		}
+		.reviews-2gis {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 30px;
+			p {
+				margin-bottom: 0;
+			}
+			.avarage-rating {
+				font-size: 50px;
+				font-weight: 500;
+			}
+			.go-review {
+				position: relative;
+				font-size: 16px;
+				font-weight: 500;
+				padding: 10px 20px;
+				border: 1px solid $pink;
+				border-radius: 15px;
+				transition: all 0.4s ease;
+			}
+			.go-review:hover {
+				background: $pink;
+				color: white;
+			}
+			.score {
+				display: flex;
+				flex-direction: column;
+				.star {
+					display: flex;
+					gap: 20px;
+					.gis-logo {
+						font-size: 18px;
+						font-weight: 550;
+					}
+				}
+				.numbers {
+					display: flex;
+					justify-content: space-between;
+					font-size: 15px;
+					.numbers-bold {
+						font-weight: 550;
+					}
+					.numbers-bold-dot {
+						font-weight: 900;
+					}
+				}
+			}
+		}
+	}
+	.reviews-catalog {
+		width: 100%;
+		overflow: visible;
+		.swiper-slide:nth-child(2) {
+			.services-home-card {
+				background-color: hsla(339, 86%, 55%, 0.1);
+			}
+		}
+		.swiper-slide:nth-child(7) {
+			.services-home-card {
+				background-color: hsla(0, 0%, 12%, 0.7);
+			}
+		}
+		.swiper-slide {
+			position: relative;
+			//width: calc(36.5vw - 30px);
+			width: calc(50% - 30px);
+			height: auto !important;
+			margin-right: 60px;
+			overflow: hidden;
+			border-radius: 25px;
+			-webkit-border-radius: 25px;
+			-moz-border-radius: 25px;
+			-ms-border-radius: 25px;
+			-o-border-radius: 25px;
+			//height: 380px;
+			transition: 0.3s ease;
+			.reviews-home-card {
+				padding: 40px;
+				gap: 20px;
+				background-color: #eef3f3;
+				width: 100%;
+				height: 100%;
+				color: black;
+				border: 1px solid #d1dbdb;
+				display: flex;
+				flex-direction: column;
+				justify-content: start;
+				align-items: flex-start;
+				//gap: 40px;
+				line-height: 1.3;
+				border-radius: 25px;
+				-webkit-border-radius: 25px;
+				-moz-border-radius: 25px;
+				-ms-border-radius: 25px;
+				-o-border-radius: 25px;
+				transition: 0.4s cubic-bezier(0, 0, 0.5, 1);
+				-webkit-transition: 0.4s cubic-bezier(0, 0, 0.5, 1);
+				-moz-transition: 0.4s cubic-bezier(0, 0, 0.5, 1);
+				-ms-transition: 0.4s cubic-bezier(0, 0, 0.5, 1);
+				-o-transition: 0.4s cubic-bezier(0, 0, 0.5, 1);
+				.review-profile {
+					display: flex;
+					flex-direction: row;
+					gap: 20px;
+					img {
+						width: 87px;
+						height: 87px;
+						border-radius: 1000px;
+					}
+					.profile-info {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						.star {
+							img {
+								width: 30px;
+								height: 30px;
+							}
+						}
+						p {
+							margin-bottom: 0;
+						}
+						.profile-name {
+							font-size: 20px;
+							font-weight: 550;
+						}
+						.profile-date {
+							font-size: 14px;
+						}
+					}
+				}
+				.reviews-text {
+					margin-bottom: 0;
+					font-weight: 500;
+				}
+			}
+		}
+		.swiper-slide:hover {
+			box-shadow: 4px 4px 20px #1e1e1e1f;
+		}
+	}
+}
+@media (max-width: 1690px) {
+	.home-services {
+		.promo-catalog {
+			.swiper-slide {
+				.services-home-card {
+					.title-card {
+						p {
+							font-size: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1600px) {
+	.home-services {
+		.promo-catalog {
+			.swiper-slide {
+				min-width: calc(50% - 20px);
+				.services-home-card {
+					.title-card {
+						p {
+							font-size: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	.home-reviews {
+		gap: 30px;
+		.swiper-title-pagination {
+			flex-direction: column;
+			align-items: flex-start;
+			.reviews-2gis {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 10px;
+				p {
+					margin-bottom: 0;
+				}
+				.avarage-rating {
+					font-size: 40px;
+					font-weight: 500;
+				}
+				.go-review {
+					position: relative;
+					font-size: 14px;
+					padding: 7px 15px;
+					border: 1px solid $pink;
+					border-radius: 10px;
+					transition: all 0.4s ease;
+					white-space: nowrap;
+				}
+				.go-review:hover {
+					background: $pink;
+					color: white;
+				}
+				.score {
+					display: flex;
+					flex-direction: column;
+					width: 45%;
+					.star {
+						display: flex;
+						gap: 10px;
+						.star-icon {
+							img {
+								width: 14px;
+								height: auto;
+							}
+						}
+						.gis-logo {
+							font-size: 14px;
+							font-weight: 550;
+						}
+					}
+					.numbers {
+						display: flex;
+						justify-content: space-between;
+						font-size: 12px;
+						.numbers-bold {
+							font-weight: 550;
+						}
+						.numbers-bold-dot {
+							font-weight: 900;
+						}
+					}
+				}
+			}
+			.reviews-title {
+				h2 {
+					font-size: 26px;
+				}
+			}
+			div {
+				.swiper-button-prev-reviews,
+				.swiper-button-next-reviews {
+					display: none;
+				}
+			}
+			a {
+				font-size: 16px;
+				svg {
+					height: 25px;
+					width: auto;
+				}
+			}
+		}
+		.reviews-catalog {
+			.swiper-slide {
+				width: 85% !important;
+				min-width: 85%;
+				margin-right: 20px;
+				.reviews-home-card {
+					padding: 20px;
+					gap: 10px;
+					.review-profile {
+						display: flex;
+						flex-direction: row;
+						gap: 20px;
+						img {
+							width: 60px;
+							height: 60px;
+						}
+						.profile-info {
+							display: flex;
+							flex-direction: column;
+							justify-content: space-between;
+							img {
+								width: 20px;
+								height: 20px;
+							}
+							p {
+								margin-bottom: 0;
+							}
+							.profile-name {
+								font-size: 18px;
+								font-weight: 550;
+							}
+							.profile-date {
+								font-size: 12px;
+							}
+						}
+					}
+					.reviews-text {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

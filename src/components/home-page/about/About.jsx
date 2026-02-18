@@ -5,7 +5,7 @@ const About = observer(() => {
 	return (
 		<section
 			id='about'
-			className='about max-w-480 mx-auto bg-[#fcffff] lg:pt-25 pb-6 lg:pb-12 2xl:py-20'
+			className='max-w-480 mx-auto bg-[#fcffff] lg:pt-25 pb-6 lg:pb-12 2xl:py-20'
 		>
 			<div className='max-w-360 mx-auto px-5 flex flex-col lg:flex-row gap-6'>
 				<div className='w-full lg:w-1/2 flex flex-col gap-5 md:justify-between '>

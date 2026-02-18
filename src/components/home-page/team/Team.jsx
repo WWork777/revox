@@ -49,7 +49,7 @@ export default function Team() {
 		<>
 			<div
 				id='team'
-				className=' team max-w-480 mx-auto bg-[#eef3f3] lg:pt-10 pb-10 2xl:py-20 '
+				className='max-w-480 mx-auto bg-[#eef3f3] lg:pt-10 pb-10 2xl:py-20 '
 			>
 				<div className='max-w-360 mx-auto px-5 pb-6 flex flex-col lg:flex-row lg:items-center lg:justify-between'>
 					<h2 className='text-[36px] sm:text-[42px] md:text-[56px] lg:text-[64px] font-semibold'>

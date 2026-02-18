@@ -1,0 +1,422 @@
+@import '../const.scss';
+
+@keyframes hero-fon {
+	0% {
+		filter: blur(20px);
+		scale: 1.1;
+	}
+	100% {
+		filter: blur(0);
+		scale: 1;
+	}
+}
+
+@keyframes slogan {
+	0% {
+		opacity: 0;
+		transform: translateX(-5vw);
+		-webkit-transform: translateX(-5vw);
+		-moz-transform: translateX(-5vw);
+		-ms-transform: translateX(-5vw);
+		-o-transform: translateX(-5vw);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes podslogan {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+	}
+	38% {
+		opacity: 0;
+		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes button1 {
+	0% {
+		opacity: 0;
+		transform: translateX(-5vw);
+		-webkit-transform: translateX(-5vw);
+		-moz-transform: translateX(-5vw);
+		-ms-transform: translateX(-5vw);
+		-o-transform: translateX(-5vw);
+	}
+	50% {
+		opacity: 0;
+		transform: translateX(-5vw);
+		-webkit-transform: translateX(-5vw);
+		-moz-transform: translateX(-5vw);
+		-ms-transform: translateX(-5vw);
+		-o-transform: translateX(-5vw);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+	}
+}
+@keyframes button2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-5vw);
+		-webkit-transform: translateX(-5vw);
+		-moz-transform: translateX(-5vw);
+		-ms-transform: translateX(-5vw);
+		-o-transform: translateX(-5vw);
+	}
+	38% {
+		opacity: 0;
+		transform: translateX(-5vw);
+		-webkit-transform: translateX(-5vw);
+		-moz-transform: translateX(-5vw);
+		-ms-transform: translateX(-5vw);
+		-o-transform: translateX(-5vw);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes treug {
+	0% {
+		opacity: 0;
+		transform: translateX(-10vw) rotate(-0.25turn);
+		scale: 0.5;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0);
+		scale: 1;
+	}
+}
+
+.hero {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	.hero-fon {
+		position: fixed;
+		z-index: -99;
+		object-fit: cover;
+		object-position: top;
+		height: 100vh;
+		width: 100%;
+		animation: hero-fon 4s cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	.hero-content {
+		color: white;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		//background: -webkit-linear-gradient(180deg, hsla(339, 86%, 55%, 0.1),hsla(339, 75%, 64%, 0.1));
+		//background: linear-gradient(180deg, hsla(339, 86%, 55%, 0.1),hsla(339, 75%, 64%, 0.1));
+		.triangle {
+			position: absolute;
+			height: 85%;
+			width: auto;
+			margin-left: -4%;
+			z-index: -10;
+			animation: treug 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+			//-webkit-animation: treug 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			-webkit-animation: treug 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+		.triangle:hover {
+			//box-shadow: inset 0 0 50px $pink;
+			//scale: 1.01;
+		}
+		.hero-dark-fon {
+			position: relative;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			//background-color: rgba(0, 0, 0, 0.2);
+			padding: 0 13%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.hero-buttons {
+			display: flex;
+			flex-direction: row;
+			gap: 30px;
+			margin-top: 90px;
+			z-index: 1;
+			button {
+				//background: -webkit-linear-gradient(90deg, $pink, $light-pink, $light-pink, $pink);
+				//background: linear-gradient(90deg, $pink, $light-pink, $light-pink, $pink);
+				background: -webkit-linear-gradient(90deg, $pink, $pink, $light-pink);
+				background: linear-gradient(90deg, $pink, $pink, $light-pink);
+				background-size: 200%;
+				background-position: right;
+				color: white;
+				border: none;
+				padding: 30px 60px;
+				font-size: 20px;
+				text-transform: uppercase;
+				font-weight: 550;
+				border-radius: 20px;
+				animation: button1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				-webkit-animation: button1 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+				transition: all 0.4s cubic-bezier(0, 0, 0.5, 1);
+			}
+			button:hover {
+				scale: 1.01;
+				box-shadow: 4px 4px 20px hsla(339, 86%, 55%, 0.3);
+				background-position: left;
+			}
+		}
+		.slogan {
+			z-index: 1;
+			p {
+				font-size: 74px;
+				font-weight: 600;
+				line-height: 1.2;
+				text-shadow: 0px 0px 4px hsla(357, 64%, 52%, 0.3);
+				margin-bottom: 60px;
+				animation: slogan 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				-webkit-animation: slogan 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			}
+			span {
+				display: block;
+				font-size: 24px;
+				width: 85%;
+				font-weight: 350;
+				text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.247);
+				animation: podslogan 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				-webkit-animation: podslogan 1.6s
+					cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			}
+		}
+	}
+}
+@media (max-width: 1600px) {
+	.hero {
+		.hero-content {
+			padding: 0 0%;
+			.hero-dark-fon {
+				padding: 0 10%;
+			}
+			.slogan {
+				p {
+					font-size: 70px;
+				}
+				span {
+					font-size: 20px;
+				}
+			}
+			.hero-buttons {
+				button {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1450px) {
+	.hero {
+		.hero-content {
+			.triangle {
+				height: 75%;
+			}
+			.slogan {
+				p {
+					font-size: 60px;
+				}
+				span {
+					font-size: 18px;
+				}
+			}
+			.hero-buttons {
+				button {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1300px) {
+	.hero {
+		.hero-content {
+			.hero-dark-fon {
+				padding: 0 5%;
+			}
+			.triangle {
+				margin-left: -3vw;
+				height: 75%;
+			}
+			.slogan {
+				p {
+					font-size: 60px;
+				}
+				span {
+					font-size: 18px;
+				}
+			}
+			.hero-buttons {
+				button {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 882px) {
+	.hero {
+		.hero-content {
+			.hero-dark-fon {
+				align-items: center;
+			}
+			.triangle {
+				margin-left: auto;
+				margin-right: auto;
+				width: 60%;
+				height: auto;
+			}
+			.slogan {
+				p {
+					font-size: 50px;
+					margin-bottom: 20px;
+				}
+				span {
+					font-size: 16px;
+				}
+			}
+			.hero-buttons {
+				margin-top: 40px;
+				width: 100%;
+				button {
+					font-size: 16px;
+					border-radius: 17px;
+					padding: 10px 25px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 805px) {
+	.hero {
+		.hero-content {
+			.slogan {
+				p {
+					font-size: 45px;
+				}
+				span {
+					font-size: 14px;
+				}
+			}
+			.hero-buttons {
+				gap: 20px;
+				button {
+					font-weight: 450;
+					font-size: 18px;
+					border-radius: 17px;
+					padding: 14px 25px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 690px) {
+	.hero {
+		.hero-content {
+			.slogan {
+				p {
+					font-size: 45px;
+				}
+				span {
+					font-size: 14px;
+					width: 70%;
+				}
+			}
+			.hero-buttons {
+				gap: 20px;
+				button {
+					font-weight: 450;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 565px) {
+	.hero {
+		.hero-content {
+			.slogan {
+				p {
+					font-size: 45px;
+				}
+				span {
+					font-size: 14px;
+					width: 80%;
+				}
+			}
+			.hero-buttons {
+				gap: 20px;
+				button {
+					font-weight: 450;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 492px) {
+	.hero {
+		.hero-content {
+			.slogan {
+				p {
+					font-size: 34px;
+				}
+				span {
+					font-size: 12px;
+					width: 100%;
+				}
+			}
+			.hero-buttons {
+				flex-direction: column;
+				gap: 20px;
+				button {
+					font-weight: 500;
+					font-size: 12px;
+					padding: 17px 25px;
+				}
+			}
+		}
+	}
+}

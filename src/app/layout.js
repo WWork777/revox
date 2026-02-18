@@ -1,5 +1,7 @@
 import Footer from '@/components/common/Footer'
 import Header from '@/components/common/Header'
+import Contacts from '@/components/home-page/contacts/Contacts'
+import Cta from '@/components/home-page/cta/Cta'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 
@@ -9,9 +11,6 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-	title: 'VOX — Музыкальный лейбл в Кемерово',
-	description:
-		'Мы предоставляем возможность не только петь, но и быть услышанными!',
 	icons: {
 		icon: [{ rel: 'icon', type: 'image/svg+xml', url: '/favicon/favicon.svg' }],
 		shortcut: '/favicon/favicon.ico',
@@ -24,8 +23,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='ru'>
 			<body className={`${montserrat.variable}  antialiased`}>
+				{' '}
 				<Header />
 				{children}
+				<Contacts />
+				<Cta />
 				<Footer />
 			</body>
 		</html>
