@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-montserrat: var(--font-montserrat);
+	--font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+	margin: 0 !important;
+	padding: 0 !important;
+	@media (min-width: 1024px) {
+		scroll-padding-top: 110px;
+	}
+	@media (min-width: 1200px) {
+		scroll-padding-top: 130px;
+	}
+}
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-montserrat), sans-serif;
+}
+.landscape {
+	@media (max-height: 640px) and (orientation: landscape) {
+		height: 100%;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+}
+.contact-item {
+	position: relative;
+	padding-left: 20px;
+}
+
+.contact-item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	border-radius: 100px;
+	background: linear-gradient(to top, #ff69b4, #ff69b4, #ffb6c1);
+}
