@@ -1,21 +1,44 @@
-import { Montserrat } from 'next/font/google'
 import '../globals.css'
-
-const montserrat = Montserrat({
-	variable: '--font-montserrat',
-	subsets: ['latin'],
-})
 
 export const metadata = {
 	title: 'VOX — Музыкальный лейбл в Кемерово',
 	description:
 		'Мы предоставляем возможность не только петь, но и быть услышанными!',
-	icons: {
-		icon: [{ rel: 'icon', type: 'image/svg+xml', url: '/favicon/favicon.svg' }],
-		shortcut: '/favicon/favicon.ico',
-		apple: '/favicon/apple-touch-icon.png',
+	alternates: {
+		canonical: 'https://vox42.ru/',
 	},
-	manifest: '/favicon/site.webmanifest',
+	keywords: [
+		'вокальная студия Кемерово',
+		'зал записи песен',
+		'создание песен',
+		'сведение',
+		'мастеринг',
+		'постановка голоса',
+		'экстрим вокал',
+		'скрим',
+		'гроул',
+		'харш',
+		'сонграйтинг',
+		'занятия по вокалу',
+		'сертификат на занятия',
+		'сертификат на запись',
+		'школа вокала',
+		'голос',
+		'пение',
+		'песня на заказ',
+	],
+	openGraph: {
+		title: 'Студия звукозаписи и вокала VOX в Кемерово',
+		description:
+			'Вокал, запись песен, сведение, написание музыки — всё в VOX, топ-студии Кемерова. Раскрой свой голос с командой профи!',
+		url: `https://vox42.ru/`,
+		images: [
+			{
+				url: `/favicon/favicon-96x96.png`,
+				alt: 'Студия звукозаписи и вокала VOX в Кемерово',
+			},
+		],
+	},
 }
 
 export default function MainLayout({ children }) {
