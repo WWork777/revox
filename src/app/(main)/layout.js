@@ -5,7 +5,7 @@ export const metadata = {
 	description:
 		'Мы предоставляем возможность не только петь, но и быть услышанными!',
 	alternates: {
-		canonical: 'https://vox42.ru/',
+		canonical: 'https://voxmusic.ru/',
 	},
 	keywords: [
 		'вокальная студия Кемерово',

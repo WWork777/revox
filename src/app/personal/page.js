@@ -3,7 +3,7 @@ export const metadata = {
 	description:
 		'Вокал, запись песен, сведение, написание музыки — всё в VOX, топ-студии Кемерова. Раскрой свой голос с командой профи!',
 	alternates: {
-		canonical: 'https://vox42.ru/',
+		canonical: 'https://voxmusic.ru/',
 	},
 	keywords: [
 		'вокальная студия Кемерово',
