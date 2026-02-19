@@ -52,6 +52,7 @@ import Modal from '@/components/common/Modal'
 import RequestForm from '@/components/common/RequestForm'
 import { modalStore } from '@/store/ModalStore'
 import { observer } from 'mobx-react-lite'
+import Link from 'next/link'
 
 const Release = observer(() => {
 	return (
@@ -92,12 +93,15 @@ const Release = observer(() => {
 								Из ученика — в артисты
 							</p>
 						</div>
-						<button
-							onClick={modalStore.openModal}
-							className='text-white bg-gradient-to-r from-[#EF286F] via-[#EF286F] to-[#E85E8F] bg-right hover:bg-left px-8 py-3 rounded-xl font-medium cursor-pointer hover:scale-[1.01] hover:shadow-[4px_4px_20px_hsla(339,86%,55%,0.3)] transition-all duration-400 shadow-[4px_4px_20px_rgba(0,0,0,0.2)] w-max'
-						>
-							ОСТАВИТЬ ЗАЯВКУ
-						</button>
+						<Link href={'tel:+79059169286'}>
+							{' '}
+							<button
+								// onClick={modalStore.openModal}
+								className='text-white bg-gradient-to-r from-[#EF286F] via-[#EF286F] to-[#E85E8F] bg-right hover:bg-left px-8 py-3 rounded-xl font-medium cursor-pointer hover:scale-[1.01] hover:shadow-[4px_4px_20px_hsla(339,86%,55%,0.3)] transition-all duration-400 shadow-[4px_4px_20px_rgba(0,0,0,0.2)] w-max'
+							>
+								ОСТАВИТЬ ЗАЯВКУ
+							</button>
+						</Link>
 					</div>
 				</div>
 			</section>

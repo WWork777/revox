@@ -1,6 +1,6 @@
 'use client'
-import { modalStore } from '@/store/ModalStore'
 import { observer } from 'mobx-react-lite'
+import Link from 'next/link'
 import { forwardRef, useImperativeHandle, useRef } from 'react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
@@ -164,12 +164,15 @@ const ServicesSLider = observer(
 										{slide.desc}
 									</p>
 								</div>
-								<button
-									onClick={modalStore.openModal}
-									className='text-white bg-linear-to-r from-[#EF286F] via-[#EF286F] to-[#E85E8F]  bg-right hover:bg-left px-8  py-3  rounded-xl  font-medium cursor-pointer hover:scale-[1.01] hover:shadow-[4px_4px_20px_hsla(339,86%,55%,0.3)] transition-all duration-400 shadow-[4px_4px_20px_rgba(0,0,0,0.2)] w-max'
-								>
-									ЗАПИСАТЬСЯ
-								</button>
+								<Link href={'tel:+79059169286'}>
+									{' '}
+									<button
+										// onClick={modalStore.openModal}
+										className='text-white bg-linear-to-r from-[#EF286F] via-[#EF286F] to-[#E85E8F]  bg-right hover:bg-left px-8  py-3  rounded-xl  font-medium cursor-pointer hover:scale-[1.01] hover:shadow-[4px_4px_20px_hsla(339,86%,55%,0.3)] transition-all duration-400 shadow-[4px_4px_20px_rgba(0,0,0,0.2)] w-max'
+									>
+										ЗАПИСАТЬСЯ
+									</button>
+								</Link>
 							</div>
 						</SwiperSlide>
 					))}

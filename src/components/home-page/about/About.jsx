@@ -1,6 +1,6 @@
 'use client'
-import { modalStore } from '@/store/ModalStore'
 import { observer } from 'mobx-react-lite'
+import Link from 'next/link'
 const About = observer(() => {
 	return (
 		<section
@@ -55,12 +55,15 @@ const About = observer(() => {
 							артисты.
 						</p>
 					</div>
-					<button
-						onClick={modalStore.openModal}
-						className='text-white bg-linear-to-r from-[#EF286F] via-[#EF286F] to-[#E85E8F] bg-[length:200%] bg-right hover:bg-left px-8 md:px-11 py-3 md:py-5 rounded-xl lg:text-[20px] font-medium cursor-pointer hover:scale-[1.01] hover:shadow-[4px_4px_20px_hsla(339,86%,55%,0.3)] transition-all duration-400 shadow-[4px_4px_20px_rgba(0,0,0,0.2)] w-max mx-auto sm:mx-0'
-					>
-						ОТКРОЙ СВОЮ МУЗЫКУ
-					</button>
+					<Link href={'tel:+79059169286'}>
+						{' '}
+						<button
+							// onClick={modalStore.openModal}
+							className='text-white bg-linear-to-r from-[#EF286F] via-[#EF286F] to-[#E85E8F] bg-[length:200%] bg-right hover:bg-left px-8 md:px-11 py-3 md:py-5 rounded-xl lg:text-[20px] font-medium cursor-pointer hover:scale-[1.01] hover:shadow-[4px_4px_20px_hsla(339,86%,55%,0.3)] transition-all duration-400 shadow-[4px_4px_20px_rgba(0,0,0,0.2)] w-max mx-auto sm:mx-0'
+						>
+							ОТКРОЙ СВОЮ МУЗЫКУ
+						</button>
+					</Link>
 				</div>
 				<div className=' w-full lg:w-1/2 pl-2'>
 					<img
