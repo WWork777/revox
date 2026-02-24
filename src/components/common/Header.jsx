@@ -443,7 +443,7 @@ export default function Header() {
 				<div className='w-full flex items-center justify-between sm:w-auto sm:mx-auto'>
 					<Link href={'/'}>
 						<img
-							src='/images/logo/logo.png'
+							src='/images/logo/logo.svg'
 							alt='logo'
 							className={`
 								w-15 md:w-20 lg:w-25 2xl:w-30 
