@@ -12,7 +12,7 @@
 // 						className='absolute bottom-0 right-0 hidden sm:block'
 // 					/>
 // 					<h2 className='text-3xl xl:text-5xl lg:text-6xl font-semibold '>
-// 						VOX: Твой первый релиз — уже через 3 месяца.
+// 						ВОКС: Твой первый релиз — уже через 3 месяца.
 // 					</h2>
 // 					<p className='font-medium'>
 // 						{' '}
@@ -69,7 +69,7 @@ const Release = observer(() => {
 							className='absolute bottom-0 right-0 hidden sm:block'
 						/>
 						<h2 className='text-[36px] sm:text-[38px] md:text-[40px] xl:text-[42px] 2xl:text-[48px] font-semibold leading-10 2xl:leading-14 '>
-							VOX: Твой первый релиз — уже через 3 месяца.
+							ВОКС: Твой первый релиз — уже через 3 месяца.
 						</h2>
 						<p className='text-lg xl:text-xl font-medium'>
 							Мы — единственные в Кемерово, кто не просто учит петь, а

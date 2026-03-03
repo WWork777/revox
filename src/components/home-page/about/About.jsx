@@ -14,7 +14,7 @@ const About = observer(() => {
 					</h1>
 					<div>
 						<p className='text-xl font-medium pb-3 xl:pb-5 leading-5'>
-							VOX — это не просто студия. Это{' '}
+							ВОКС — это не просто студия. Это{' '}
 							<span className='text-[#e85e8f]'>лейбл</span>.
 						</p>
 						<p className='text-lg xl:text-xl font-medium pb-2 xl:pb-5 leading-5'>
@@ -51,7 +51,7 @@ const About = observer(() => {
 							<li>И организуем живые выступления на наших концертах</li>
 						</ul>
 						<p className='text-lg xl:text-xl font-medium pb-5 xl:leading-5 xl:pb-10'>
-							<span className='text-[#e85e8f]'>VOX.</span> Место, где рождаются
+							<span className='text-[#e85e8f]'>ВОКС.</span> Место, где рождаются
 							артисты.
 						</p>
 					</div>

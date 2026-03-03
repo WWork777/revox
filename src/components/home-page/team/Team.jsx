@@ -70,7 +70,7 @@ export default function Team() {
 								src={item.img}
 								width={700}
 								height={500}
-								alt={`Преподаватель вокальной студии VOX в Кемерове ${item.name}`}
+								alt={`Преподаватель вокальной студии ВОКС в Кемерове ${item.name}`}
 								className='w-full h-full object-cover absolute'
 							/>
 							<div className='relative w-full h-full flex flex-col justify-between p-10 text-white bg-linear-to-t from-black/80 to-transparent via-transparent'>

@@ -216,7 +216,7 @@ const Hero = observer(() => {
 								isAnimating ? 'animate-slogan' : ''
 							} text-shadow-lg`}
 						>
-							VOX — Музыкальный <br className='2xl:hidden' /> лейбл в Кемерово
+							ВОКС — Музыкальный <br className='2xl:hidden' /> лейбл в Кемерово
 						</h1>
 
 						<h2

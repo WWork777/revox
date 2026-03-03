@@ -176,10 +176,10 @@ const YMap = ({ coordinates = [55.36312, 86.069582] }) => {
 			const placemark = new window.ymaps.Placemark(
 				coordinates,
 				{
-					hintContent: 'VOX',
+					hintContent: 'ВОКС',
 					balloonContent: `
             <div style="padding: 10px;">
-              <strong>Вокальная студия VOX</strong><br/>
+              <strong>Вокальная студия ВОКС</strong><br/>
               ул. Николая Островского, 7А<br/>
               <a href="tel:+79059169286">+7 905 916-92-86</a>
             </div>
