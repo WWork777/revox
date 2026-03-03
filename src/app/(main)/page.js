@@ -1,8 +1,3 @@
-export const metadata = {
-	title: 'VOX — Музыкальный лейбл в Кемерово',
-	description:
-		'Мы предоставляем возможность не только петь, но и быть услышанными!',
-}
 import About from '@/components/home-page/about/About'
 import Hero from '@/components/home-page/hero/Hero'
 import Projects from '@/components/home-page/projects/Projects'
