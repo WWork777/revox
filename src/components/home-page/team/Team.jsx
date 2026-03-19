@@ -121,7 +121,7 @@ export default function Team() {
 											</defs>
 										</svg>
 									</Link>
-									<Link href={item.inst}>
+									{/* <Link href={item.inst}>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
 											width='40'
@@ -150,7 +150,7 @@ export default function Team() {
 												</clipPath>
 											</defs>
 										</svg>
-									</Link>
+									</Link> */}
 								</div>
 								<div className='team-card-description flex flex-col'>
 									<p className='team-card-name text-[26px] lg:text-[32px] font-semibold pb-0.5'>
