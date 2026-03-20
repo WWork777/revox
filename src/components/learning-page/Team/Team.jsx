@@ -1,80 +1,88 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import './Team.scss'
 
 export default function Team() {
 	const team = [
 		{
 			id: 1,
-			img: 'Данил.jpg',
+			img: '/images/team/img_1.jpg',
 			name: 'Данил Мамзер',
 			specialization: 'Педагог по вокалу, звукорежиссёр',
 			text: 'Помогает ученикам раскрыть голос и&nbsp;записать треки, звучащие как&nbsp;на&nbsp;радио. Более 10&nbsp;лет опыта работы со&nbsp;звуком.',
 			vk: 'https://vk.com/danyaveinz',
-			tg: 'https://t.me/danilvox',
+			max: 'https://max.ru/u/f9LHodD0cOJmPBBdUdy9hLWIqth6GRdMMCQoi12WlYV5B5T71-HaIkAENzY',
 			inst: 'https://www.instagram.com/spectroveinz/',
 		},
 		{
 			id: 2,
-			img: 'Ольга.jpg',
+			img: '/images/team/img_2.jpg',
 			name: 'Ольга Доронина',
 			specialization: 'Педагог по вокалу, руководитель хора',
 			text: 'Преподавательский опыт более&nbsp;4&nbsp;лет. Обучалась по&nbsp;зарубежным методикам. Научит вокальным техникам с&nbsp;позитивом и&nbsp;заботой о&nbsp;голосе',
 			vk: 'https://vk.com/doroninaolya',
-			tg: 'https://t.me/doronina_olga',
+			max: 'https://max.ru/u/f9LHodD0cOJmPBBdUdy9hLWIqth6GRdMMCQoi12WlYV5B5T71-HaIkAENzY',
 			inst: 'https://www.instagram.com/doroninaolya_/',
 		},
 		{
 			id: 3,
-			img: 'Алексей.jpg',
+			img: '/images/team/img_3.jpg',
 			name: 'Алексей Петров',
 			specialization: 'Экстрим-вокал, электрогитара',
 			text: 'Преподаёт экстремальный вокал и&nbsp;игру на&nbsp;электрогитаре. Учит&nbsp;не&nbsp;только звучать мощно, но&nbsp;и&nbsp;делать это безопасно.',
 			vk: 'https://vk.com/ghxst3r',
-			tg: 'https://t.me/ghxst3r',
+			max: 'https://max.ru/u/f9LHodD0cOJmPBBdUdy9hLWIqth6GRdMMCQoi12WlYV5B5T71-HaIkAENzY',
 			inst: 'https://www.instagram.com/ghxst3r/',
 		},
 		{
 			id: 4,
-			img: 'Анастасия.jpg',
+			img: '/images/team/img_4.jpg',
 			name: 'Анастасия Борисенко',
 			specialization: 'Педагог по вокалу',
 			text: 'Находит подход к&nbsp;каждому ученику, помогает раскрыться, обрести уверенность и&nbsp;любовь к&nbsp;своему&nbsp;голосу.',
 			vk: 'https://vk.com/abborisenko',
-			tg: 'https://t.me/abborisenko',
+			max: 'https://max.ru/u/f9LHodD0cOJmPBBdUdy9hLWIqth6GRdMMCQoi12WlYV5B5T71-HaIkAENzY',
 			inst: 'https://www.instagram.com/abborisenko/',
 		},
 	]
 
 	return (
 		<>
-			<div id='team' className='home-block team'>
-				<div className='team-heading'>
-					<h2>Наша команда</h2>
-					<p>
-						Люди, благодаря которым здесь хочется расти и&nbsp;творить<br></br>
-						Молодые педагоги и звукорежиссёры, которые любят музыку и умеют
-						вдохновлять
+			<div
+				id='team'
+				className='max-w-480 mx-auto bg-[#eef3f3] lg:pt-10 pb-10 2xl:py-20 '
+			>
+				<div className='max-w-360 mx-auto px-5 pb-6 flex flex-col lg:flex-row lg:items-center lg:justify-between'>
+					<h2 className='text-[36px] sm:text-[42px] md:text-[56px] lg:text-[64px] font-semibold'>
+						Наша команда
+					</h2>
+					<p className='text-lg font-medium lg:text-right leading-5'>
+						Люди, благодаря которым твоя звезда <br /> загориться и твоё имя
+						станет известным
 					</p>
 				</div>
-				<div className='team-container'>
+				<div className='max-w-360 mx-auto px-5 grid lg:grid-cols-2  gap-15 '>
 					{team.map(item => (
-						<div className='team-card' key={item.id}>
+						<div
+							className='team-card relative flex grow  h-[52vh] min-h-112.5 overflow-hidden rounded-[30px]'
+							key={item.id}
+						>
 							<Image
-								src={`/Home/Team/${item.img}`}
+								src={item.img}
 								width={700}
 								height={500}
 								alt={`Преподаватель вокальной студии ВОКС в Кемерове ${item.name}`}
+								className='w-full h-full object-cover absolute'
 							/>
-							<div className='team-card-info'>
-								<div className='team-card-links'>
+							<div className='relative w-full h-full flex flex-col justify-between p-10 text-white bg-linear-to-t from-black/80 to-transparent via-transparent'>
+								<div className='team-card-links flex justify-end lg:flex-col items-end gap-5'>
 									<Link href={item.vk}>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
-											width='50'
-											height='50'
+											width='40'
+											height='40'
 											viewBox='0 0 50 50'
 											fill='none'
+											className='md:w-[50px] md:h-[50px]'
 										>
 											<g clipPath='url(#clip0_320_270)'>
 												<path
@@ -89,36 +97,29 @@ export default function Team() {
 											</defs>
 										</svg>
 									</Link>
-									{/* <Link href={item.tg}>
+									<Link href={item.max}>
 										<svg
-											xmlns='http://www.w3.org/2000/svg'
-											width='50'
-											height='50'
-											viewBox='0 0 50 50'
+											width='40'
+											height='40'
+											viewBox='0 0 320 320'
 											fill='none'
+											xmlns='http://www.w3.org/2000/svg'
+											className='md:w-[50px] md:h-[50px]'
 										>
-											<g clipPath='url(#clip0_320_269)'>
-												<path
-													fillRule='evenodd'
-													clipRule='evenodd'
-													d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25ZM25.8959 18.4561C23.4643 19.4675 18.6045 21.5608 11.3164 24.7361C10.133 25.2067 9.51304 25.6671 9.4566 26.1173C9.36122 26.8781 10.314 27.1777 11.6114 27.5857C11.7879 27.6412 11.9707 27.6987 12.1582 27.7596C13.4347 28.1745 15.1517 28.6599 16.0443 28.6792C16.854 28.6967 17.7578 28.3629 18.7555 27.6778C25.5649 23.0813 29.08 20.7579 29.3006 20.7078C29.4563 20.6725 29.6721 20.6281 29.8183 20.758C29.9644 20.8879 29.9501 21.134 29.9346 21.2C29.8402 21.6024 26.1003 25.0794 24.1648 26.8787C23.5615 27.4396 23.1335 27.8375 23.046 27.9284C22.85 28.132 22.6503 28.3245 22.4583 28.5096C21.2724 29.6528 20.3831 30.51 22.5075 31.91C23.5284 32.5827 24.3453 33.139 25.1603 33.6941C26.0504 34.3002 26.9381 34.9047 28.0867 35.6576C28.3793 35.8495 28.6588 36.0487 28.931 36.2428C29.9668 36.9812 30.8974 37.6446 32.0471 37.5388C32.7151 37.4773 33.4051 36.8492 33.7556 34.9757C34.5838 30.5482 36.2117 20.9551 36.588 17.002C36.6209 16.6557 36.5794 16.2124 36.5461 16.0179C36.5129 15.8233 36.4433 15.5461 36.1903 15.3408C35.8908 15.0978 35.4284 15.0465 35.2216 15.0502C34.2813 15.0667 32.8387 15.5684 25.8959 18.4561Z'
-													fill='white'
-												/>
+											<rect width='320' height='320' rx='153.6' fill='none' />
+											<g transform='translate(0.000000,320.000000) scale(0.100000,-0.100000)' fill='white' stroke='none'>
+												<path d='M1450 3184 c-14 -2 -68 -11 -120 -20 -506 -85 -965 -434 -1180 -899 -114 -245 -157 -505 -139 -832 12 -214 43 -392 123 -704 69 -268 90 -382 101 -539 4 -59 13 -105 23 -123 79 -133 443 -60 634 127 l37 36 86 -56 c169 -110 294 -151 498 -163 221 -14 435 12 624 74 124 41 329 147 433 225 312 234 528 566 610 937 16 74 20 128 20 341 0 219 -3 265 -21 349 -134 620 -603 1090 -1221 1225 -71 15 -140 21 -288 23 -107 2 -206 2 -220 -1z m348 -799 c305 -71 552 -326 616 -637 76 -369 -138 -754 -499 -899 -222 -88 -452 -75 -660 39 l-70 39 -75 -62 c-87 -70 -134 -93 -159 -78 -48 30 -95 151 -127 328 -26 141 -26 465 -1 583 72 337 266 575 540 667 43 14 104 30 135 35 71 11 217 4 300 -15z' />
 											</g>
-											<defs>
-												<clipPath id='clip0_320_269'>
-													<rect width='50' height='50' fill='white' />
-												</clipPath>
-											</defs>
 										</svg>
-									</Link> */}
+									</Link>
 									{/* <Link href={item.inst}>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
-											width='50'
-											height='50'
+											width='40'
+											height='40'
 											viewBox='0 0 50 50'
 											fill='none'
+											className='md:w-12.5 md:h-12.5'
 										>
 											<g clipPath='url(#clip0_320_268)'>
 												<path
@@ -142,13 +143,15 @@ export default function Team() {
 										</svg>
 									</Link> */}
 								</div>
-								<div className='team-card-description'>
-									<p className='team-card-name'>{item.name}</p>
-									<p className='team-card-specialization'>
+								<div className='team-card-description flex flex-col'>
+									<p className='team-card-name text-[26px] lg:text-[32px] font-semibold pb-0.5'>
+										{item.name}
+									</p>
+									<p className='team-card-specialization  lg:text-xl font-medium mb-3.75'>
 										{item.specialization}
 									</p>
 									<p
-										className='team-card-text'
+										className='team-card-text  lg:text-base font-normal mb-0'
 										dangerouslySetInnerHTML={{ __html: item.text }}
 									></p>
 								</div>
