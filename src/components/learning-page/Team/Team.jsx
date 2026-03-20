@@ -89,7 +89,7 @@ export default function Team() {
 											</defs>
 										</svg>
 									</Link>
-									<Link href={item.tg}>
+									{/* <Link href={item.tg}>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
 											width='50'
@@ -111,7 +111,7 @@ export default function Team() {
 												</clipPath>
 											</defs>
 										</svg>
-									</Link>
+									</Link> */}
 									{/* <Link href={item.inst}>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'

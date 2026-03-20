@@ -73,7 +73,7 @@ export default function Contacts() {
 								</svg>
 							</a>
 
-							<a
+							{/* <a
 								href='https://t.me/voxmusickemerovo'
 								className='text-black hover:text-[#FF69B4] transition-colors duration-300'
 							>
@@ -106,7 +106,7 @@ export default function Contacts() {
 										></path>
 									</g>
 								</svg>
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</div>
