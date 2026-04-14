@@ -43,6 +43,16 @@ export default function Team() {
 			max: 'https://max.ru/u/f9LHodD0cOJmPBBdUdy9hLWIqth6GRdMMCQoi12WlYV5B5T71-HaIkAENzY',
 			inst: 'https://www.instagram.com/abborisenko/',
 		},
+		{
+			id: 5,
+			img: '/images/team/img_5.webp',
+			name: 'Анна Калитурина',
+			specialization: 'Педагог по вокалу',
+			text: 'Профессиональная вокалистка с&nbsp;уникальным тембром. Поможет снять зажимы, развить музыкальный слух и&nbsp;научит владеть голосом в&nbsp;любом жанре.',
+			vk: 'https://vk.ru/id232670828',
+			max: 'https://max.ru/u/f9LHodD0cOIH0l6GWSDMv4ZmLKV4SQn74EiRJlaUF5_x9vyvg-SkGOjS5l4',
+			inst: 'https://www.instagram.com/abborisenko/',
+		},
 	]
 
 	return (
